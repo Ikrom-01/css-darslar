@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 0px 7px black;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 60px;
+    height: 28px;
+    background: silver;
+    border-radius: 25px;
+    position: relative;
+    transition: all 0.6s ease;
+
+}
+input[type="checkbox"]:checked{
+    appearance: none;
+    width: 60px;
+    height: 28px;
+    background: #0c0d1f;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 0px 2px silver;
+    transition: all 0.6s ease;
+
+}
+input[type="checkbox"]::after{
+    content: "";
+    width: 27px;
+    height: 28px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    transition: all 0.6s ease;
+ 
+}
+input[type="checkbox"]:checked:after{
+    content: "";
+    width: 27px;
+    height: 28px;
+    border-radius: 50%;
+    background: silver;
+    position: absolute;
+    left: 33px;
+}
+

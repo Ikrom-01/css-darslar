@@ -1,0 +1,179 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    padding: 5px;
+    background: #F6F6F9;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+nav .nav__brand{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+nav .nav__ul{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+nav .nav__ul .nav__link{
+    list-style-type: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transform: 0.5  ease all;
+    -webkit-transform: 0.5  ease all;
+    -moz-transform: 0.5  ease all;
+    -ms-transform: 0.5  ease all;
+    -o-transform: 0.5  ease all;
+}
+nav .nav__ul .nav__link a{
+    text-decoration: none;
+   
+}
+nav .nav__ul .nav__link a::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #444;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+nav .nav__ul .nav__link a:hover::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #1b1616;
+    display: block;
+    margin: 0 auto;
+    opacity: 1;
+}
+.flex-container{
+    width: 100%;
+    margin: 4px;
+    padding: 5px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.flex-container .flex-item {
+    background-image:url("https://picsum.photos/400/200");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32%;
+    height: 230px;
+    border-radius: 14px;
+    padding: 20px;
+    color: white;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+/* psedo elementlar */
+.text{
+    text-transform: uppercase;
+}
+/* .text::first-letter{
+    font-size: 35px;
+    color: red;
+} */
+/* .text::first-line{
+    color: red;
+} */
+.text::after{
+    /* content: "JAVASCRIPT";
+    color: red;
+    opacity: 0; */
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: crimson;
+    opacity: 0;
+    display: block;
+    color: red;
+}
+.text::before{
+    /* content: "JAVASCRIPT";
+    color: blue;
+    opacity: 0; */
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: black;
+    opacity: 0;
+    display: block;
+    background: blue;
+}
+
+
+
+.text:hover::after{
+    /* content: "JAVASCRIPT";
+    color: red;
+    opacity: 0; */
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: crimson;
+    opacity: 1;
+    display: block;
+    color: red;
+}
+.text:hover::before{
+    /* content: "JAVASCRIPT";
+    color: blue;
+    opacity: 0; */
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: black;
+    opacity: 1;
+    display: block;
+    background: blue;
+}
+/* .text:hover:after{
+    content: "JAVASCRIPT";
+    color: rgb(0, 255, 85);
+    opacity: 1;
+
+}
+
+.text:hover:before{
+    content: "JAVASCRIPT";
+    color: rgb(100, 82, 85);
+    opacity: 1;
+} */
+::placeholder{
+    color: crimson; 
+}
+.form-control{
+    border: 1px solid blueviolet;
+    transition: all 0.2s ease;
+}
+.form-control:focus{
+    border: 1px solid green;
+    box-shadow: inset 1px 1px 8px red , 1px 1px 10px 10px silver ;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav_brand">LOGO</div>
+          <ul class="nav__ul">
+            <li class="nav__link"><a href="#one">Home</a></li>
+            <li class="nav__link"><a href="#two">About</a></li>
+            <li class="nav__link"><a href="#three">Service</a></li>
+            <li class="nav__link"><a href="#">Contact</a></li>
+            <li class="nav__link dropdown">
+              <a href="#" class="button">Blog</a>
+              <div class="menu-content">
+                <a href="#">Service</a>
+                <a href="#">Service</a>
+                <a href="#">Service</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <main>
+      <section id="one">
+        <div class="wrapper">
+          <label for="check">
+            <input type="checkbox" id="checkbox" name="checkbox">
+          </label>
+
+          <input list="list" >
+          <datalist id="list">
+            <option value="php">php</option>
+            <option value="Golang">Go</option>
+            <option value="js">JS</option>
+            <option value="C#">C#</option>
+            <option value="c++">c++</option>
+          </datalist>
+          <input type="submit" >
+          <input type="file" name="file" id="file">
+        </div>
+
+      </section>
+      <section id="two">
+        <h1>About section</h1>
+      </section>
+      <section id="three">
+        <h1>Service section</h1>
+        <a href="#">
+          <i class="bx bxs-chevrons-up" ></i>
+        </a>
+      </section>
+    </main>
+
+    <div class="footer">©®℗2023</div>
+  </body>
+</html>
